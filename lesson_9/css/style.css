@@ -1,0 +1,55 @@
+@import url("reset.css");
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+header{
+	background: #3056D3;
+	padding: 20px 40px 20px;
+}
+[class*="__container"]{
+	padding: 120px 135px 120px;
+}
+.topgirl{
+	background: url("../img/Rectangle.webp") center / cover no-repeat;
+	padding: 120px 135px;
+}
+.txt-arrow{
+	max-width: 600px;
+}
+.txt-arrow p{
+	margin-bottom: 200px;
+}
+.photo3__container p:first-of-type{
+	margin-bottom: 30px;
+}
+.manyicon__container{
+	background: #F4F7FF;
+}
+.photo4__container{
+background: #F4F7FF;
+}
+.photo4__container p:first-of-type{
+	margin-bottom: 60px;
+}
+.vectoronlygroup{
+	background: url("../img/vector/Rectangleble.svg") left / 370px 604px no-repeat;
+
+}
+.icongroup__container{
+	background: #3056D3;
+}
+.icongroup__container :first-child{
+	background: #F4F7FF;
+}
+.vectoronly2__container{
+	background: #F4F7FF;
+}
+.vectoronly2__container p:first-of-type{
+    margin-bottom: 60px;
+}
+.vectorgroup3{
+	background: url("../img/vector/Group3.svg") center / cover no-repeat, #090E34;
+	color: #F4F7FF;
+	padding: 120px 135px 120px;
+}
