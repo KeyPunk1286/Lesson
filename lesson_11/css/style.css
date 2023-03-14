@@ -1,0 +1,138 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+body {
+	font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	background: #828181;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+	background: #FFFFFF;
+}
+
+.header__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 30px 15px;
+}
+
+.header__logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 40px;
+}
+
+.header__nav {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 150px;
+}
+
+.header__nav li:not(:last-of-type) {
+	margin-right: 30px;
+}
+
+.nav__item {
+	display: inline-block;
+}
+
+.Header__interactive {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.Header__interactive li:not(:last-of-type) {
+	margin-right: 15px;
+}
+
+.interactive__item {
+	display: inline-block;
+	position: relative;
+}
+
+.nav__link {
+	color: #212B36;
+	font-size: 16px;
+	line-height: 1.18;
+	font-weight: 600;
+}
+
+.nav__link_line-height {
+	line-height: 1.5;
+}
+
+.nav__link_padding {
+	padding: 9px 24px 9px 24px;
+}
+
+.nav__link:hover {
+	color: #3056D3;
+}
+
+.nav__link_padding:hover {
+	color: #212B36;
+	background: #F4F7FF;
+	border-radius: 5px;
+}
+
+.nav__link_after::after {
+	content: "";
+	display: inline-block;
+	background: url("../img/vector/vector.svg") no-repeat;
+	margin: 0 0 3px 13px;
+	width: 10.8px;
+	height: 5.8px;
+}
+
+.interactive__icon {
+	position: absolute;
+	top: -6px;
+	left: 13px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #3056d3;
+	text-align: center;
+	color: #fff;
+	font-size: 11px;
+	line-height: 1.45;
+}
+
+.nav__item_parent {
+	position: relative;
+}
+
+.nav-sub-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin-top: 47px;
+	min-width: 180px;
+	
+	
+}
+.sub-menu_list{
+	background: #FFFFFF;
+	border: 0.5px solid #E7E7E7;
+	border-radius: 5px;
+	padding: 22px 24px;
+}
+.sub-menu_list li{
+	margin-right: 0;
+}
+.sub-menu__link{ 
+	color: #637381;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 500;
+}
