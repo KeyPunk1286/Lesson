@@ -1,0 +1,65 @@
+@import url("reset.css");
+
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+}
+.transform__container{
+max-width: 1200px;
+margin: 0 auto;
+padding: 50px 15px;
+}
+.translate__xy{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-align: center;
+	background: chocolate;
+	width: 200px;
+	height: 200px;
+}
+.translate__xy:hover{
+	transform: translate(0 20px);
+}
+.translate__block{
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	height: 200px;
+}
+.block__one {
+	height: 30%;
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-align: center;
+	background: darkorange;
+}
+.block__two {
+	height: 30%;
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-align: center;
+	background: rgb(255, 60, 0);
+	transform: translate(20px 10px);
+}
+.block__three {
+	height: 30%;
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-align: center;
+	background: rgb(0, 255, 34);
+}
