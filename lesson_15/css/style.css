@@ -1,0 +1,195 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+body{
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+	color: #9C9C9C;
+}
+.wrapper{
+	overflow: clip;
+	min-height: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper>main {
+	flex-grow: 1;
+}
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+/*---------------------------- minimalist_section ---------------------------------*/
+.main__page {
+	padding: 100px 0px;
+}
+.minimalist-room__section {
+}
+.minimalist-room__container {
+}
+.minimalist-room__header {
+	margin-bottom: 53px;
+}
+/*---------------------------- header ---------------------------------*/
+.header-minimalist {
+}
+.header-minimalist__title {
+	max-width: 486px;
+margin: 0 auto 40px;
+color: #000000;
+font-size: 56px;
+line-height: 1.4;
+font-weight: 700;
+
+}
+.header-minimlist__info {
+	max-width: 518px;
+	margin: 0 auto;
+color: #000000;
+line-height: 1.6;
+	font-weight: 400;
+	text-align: center;
+
+}
+/*---------------------------- big_pic ---------------------------------*/
+.minimalist-room__big-pic {
+	margin-bottom: 100px;
+}
+.pic-minimalist {
+}
+.pic-minimalist__img img{
+max-width: 100%;
+}
+/*---------------------------- info ----------------------------------*/
+.minimalist-room__info {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -16px 82px;
+}
+.info-minimalist {
+}
+.info-minimalist__items {
+	flex: 0 0 50%;
+	padding: 0 16px;
+	
+}
+.info-minimalist__items_margin-p p{
+margin-bottom: 30px;
+}
+.info-minimalist__title {
+	color: #333333;
+	font-size: 24px;
+	line-height: 1.4;
+	font-weight: 600;
+	margin-bottom: 24px;
+	
+}
+.info-minimalist__txt {
+	line-height: 1.6;
+	font-weight: 400;
+}
+.info-minimalist__txt_margin{
+	margin-bottom: 60px;
+}
+.info-minimalist__list {
+display: flex;
+flex-wrap: wrap;
+column-gap: 80px;
+row-gap: 10px;
+
+}
+.list-minimalist {
+}
+.list-minimalist__date {
+	line-height: 1.6;
+	font-weight: 400;
+}
+.list-minimalist__link a{
+	line-height: 1.6;
+	font-weight: 400;
+	transition: color 0.3s;
+}
+.list-minimalist__link a:hover{
+	color: #4b4b4b;
+	transition: color 0.3s;
+}
+/*------------------------ librery -------------------------------*/
+.minimalis-room__librery {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 32px;
+	margin: 0px -16px 112px;
+}
+.librery-minimalist {
+}
+.librery-minimalist__img {
+	flex: 0 0 50%;
+	padding: 0px 16px;
+}
+.librery-minimalist__img_size{
+	flex: 0 0 100%;
+}
+/*------------------------- service_section -----------------------*/
+.services__section {
+}
+.services__container {
+}
+.services__title {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+
+}
+.services__title{
+	margin-bottom: 40px;
+
+}
+.achievement {
+	color: #000000;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.achievement::after{
+	content: "";
+	display: inline-block;
+	width: 464px;
+	height: 2px;
+	background-color: #000000;
+	margin: 0 0 4px 26px;
+}
+
+/*---------------------------- services_card ---------------------------------*/
+.services__cards{
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+}
+.cards-services {
+}
+.cards-services__items {
+	display: flex;
+	/* flex-wrap: wrap; */
+}
+.cards-services__img {
+	flex: 0 0 62.16%;
+}
+.cards-services__info {
+	flex: 0 0 37.84%;
+	padding-left: 120px;
+	align-self: center;
+}
+.cards-services__title {
+color: #333333;
+font-size: 24px;
+line-height: 1.4;
+font-weight: 600;
+margin-bottom: 20px;
+
+}
+.cards-services__txt {
+	line-height: 1.6;
+	font-weight: 400;
+}
