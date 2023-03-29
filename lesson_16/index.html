@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_16</title>
+</head>
+
+<body>
+	<div class="wraper">
+		<header></header>
+		<main>
+			<div class="maine__page">
+				<div class="checkout__section">
+					<div class="checkout__conteiner">
+
+						<div class="checkout__header">
+							<h1 class="checkout__title">Checkout</h1>
+							<div class="checkout__txt">There are 3 products in your cart</div>
+							<h2 class="checkout__details">Billing Details</h2>
+						</div>
+
+						<form action="#" method="post" enctype="multipart/form-data"
+							class="checkout__form form-checkout">
+
+							<div class="form-checkout__box box-form">
+								<div class="box-form__item"><input name="first_name" type="text" placeholder="First name*" tabindex="1"
+										class="box-forminput"></div>
+								<div class="box-form__item"><input name="last_name" type="text" tabindex="2" placeholder="Last name*"
+										class="box-forminput"></div>
+								<div class="box-form__item"><input name="address" type="text" tabindex="3" placeholder="Address*"
+										class="box-forminput"></div>
+								<div class="box-form__item"><input name="address_line" type="text" tabindex="4" placeholder="Address line 2"
+										class="box-forminput"></div>
+								<div class="box-form__item box-form__item_arrow">
+									<select name="country" tabindex="5" class="box-forminput box-forminput_arrow">
+										<option value="1">Country*</option>
+										<option value="1">Country*</option>
+										<option value="2">City</option>
+										<option value="2">Town</option>
+									</select>
+								</div>
+								<div class="box-form__item"><input name="city_town" type="text" tabindex="6" placeholder="City/Town*"
+										class="box-forminput"></div>
+								<div class="box-form__item"><input name="postcode/zip" type="number" tabindex="7" placeholder="Postcode / ZIP*"
+										class="box-forminput"></div>
+								<div class="box-form__item"><input name="phone" type="tel" tabindex="8" placeholder="Phone*"
+										class="box-forminput"></div>
+								<div class="box-form__item"><input name="postcode/zip" type="number" tabindex="9" placeholder="Postcode / ZIP*"
+										class="box-forminput"></div>
+								<div class="box-form__item"><input name="phone" type="tel" tabindex="10" placeholder="Phone*"
+										class="box-forminput"></div>
+								<div class="box-form__item box-form__item_txtarea"><textarea
+										name="Additional_information" id="textarea" cols="30" rows="10"
+										placeholder="Additional information" class="box-form__textarea"></textarea>
+								</div>
+							</div>
+
+							<div class="form-checkout__chackbox chackbox-form">
+								<div class="checkbox-form__item">
+									<input name="account" type="checkbox" tabindex="11" id="ch-1" class="checkbox-form__input">
+									<span class="checkbox-form__input-custom"></span>
+									<label for="ch-1" class="checkbox-form__name">Create Account</label>
+								</div>
+								<div class="checkbox-form__item">
+									<input name="different_address" type="checkbox" tabindex="12" id="ch-2" class="checkbox-form__input">
+									<span class="checkbox-form__input-custom"></span>
+									<label for="ch-2" class="checkbox-form__name">Ship to a different address?</label>
+								</div>
+							</div>
+
+							<div class="form-checkout__discount discount-form">
+								<h4 class="discount-form__title">Apply Coupon to get discount!</h4>
+								<div class="discount-form__box">
+									<div class="discount-form__input">
+										<input name="coupon_code" type="text" tabindex="13" placeholder="Coupon code" class="discount-form__entry-field">
+									</div>
+									<div class="discount-form__knob">
+										<button name="apply_code" type="submit" tabindex="14" class="discount-form__button">Apply Code</button>
+									</div>
+
+								</div>
+
+							</div>
+
+
+						</form>
+
+					</div>
+				</div>
+				<div class="shiping__section">
+					<div class="shiping__conteiner">
+						<h2 class="shiping__title">Shipping Address</h2>
+						<form action="#" method="post" enctype="multipart/form-data" class="shiping__form form-shiping">
+							<div class="form-shiping__username username">
+								<div class="username__lable">
+									<label for="usname" class="username__info">Email Address <span>*</span></label>
+								</div>
+								<div class="username__input">
+									<input name="username" type="text" tabindex="15" id="usname" minlength="10" required placeholder="roni_cost@example.com"
+										class="username__entry-filed">
+								</div>
+								<div class="username__lable">
+									<label for="password" class="username__info">Password</label>
+								</div>
+								<div class="username__input">
+									<input name="password" type="password" id="password" tabindex="16" placeholder="******************"
+										class="username__entry-filed">
+								</div>
+								<div class="username__lable">
+									<label for="zpc" class="username__info">Zip/Postal Code</label>
+								</div>
+								<div class="username__input">
+									<input name="zip/postal code" type="text" id="zpc" tabindex="17" class="username__entry-filed">
+								</div>
+							</div>
+							<div class="form-shiping__reminder">You already have an account with us. Sign in or continue
+								as guest.</div>
+							<div class="form-shiping__login-password login-password">
+								<div class="login-password__knob">
+									<button name="login_button" type="submit" tabindex="18" class="login-password__button">login</button>
+								</div>
+								<div class="login-password__fargot">
+									<a href="#" tabindex="19" class="login-password__link">Forgot Your Password?</a>
+								</div>
+							</div>
+							<div class="form-shiping__registration registration">
+								<div class="registration__lable">
+									<label for="fn_shiping" class="registration__info">First Name <span>*</span></label>
+								</div>
+								<div class="registration__input">
+									<input name="first_name_shiping" type="text" minlength="10" required tabindex="20" id="fn_shiping" class="registration__entry-filed">
+								</div>
+								<div class="registration__lable">
+									<label for="ln_shiping" class="registration__info">Last Name <span>*</span></label>
+								</div>
+								<div class="registration__input">
+									<input  name="last_name_shiping" type="text" minlength="10" required tabindex="21" id="ln_shiping" class="registration__entry-filed">
+								</div>
+								<div class="registration__lable">
+									<label for="company_id" class="registration__info">Company</label>
+								</div>
+								<div class="registration__input">
+									<input name="company" type="text" id="company_id" tabindex="22" class="registration__entry-filed">
+								</div>
+								<div class="registration__lable">
+									<label for="sa_shiping" class="registration__info">Street Address <span>*</span></label>
+								</div>
+								<div class="registration__input">
+									<input name="street_address" type="text" minlength="10" required id="sa_shiping" tabindex="23" class="registration__entry-filed">
+								</div>
+								<div class="registration__lable">
+									<label for="epty_1" class="registration__info"></label>
+								</div>
+								<div class="registration__input">
+									<input name="address_two" type="text" id="epty_1" tabindex="24" class="registration__entry-filed">
+								</div>
+								<div class="registration__lable">
+									<label for="epty_2" class="registration__info"></label>
+								</div>
+								<div class="registration__input">
+									<input name="address_three" type="text" id="epty_2" tabindex="25" class="registration__entry-filed">
+								</div>
+								<div class="registration__lable">
+									<label for="c_shiping" class="registration__info">Country <span>*</span></label>
+								</div>
+								<div class="registration__input">
+									<input name="country_shiping" type="text" minlength="10" required id="c_shiping" tabindex="26" class="registration__entry-filed">
+								</div>
+								<div class="registration__lable">
+									<label for="s_shiping" class="registration__info">State/Province <span>*</span></label>
+								</div>
+								<div class="registration__input registration__input_arrow">
+									<select name="state_shiping" tabindex="27" id="s_shiping"
+										class="registration__entry-filed registration__entry-filed_ff">
+										<option value="1">Please select a region, state or province</option>
+										<option value="2">State of Washington</option>
+										<option value="3">State of Arizona</option>
+										<option value="4">State of California</option>
+										<option value="5">State of Kansas</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-shiping__title">Shipping Methods</div>
+							<div class="form-shiping__footer footer-form">
+								<div class="footer-form__box-flex footer-form__box-flex_under-line">
+									<div class="box-flex__input-item">
+										<input name="price" type="radio" id="price_1" class="box-flex__radio-input" value="5.00">
+										<span class="box-flex__radio-custom"></span>
+										<label for="price_1" class="box-flex__entry-filed">$5.00</label>
+									</div>
+									<div class="box-flex__txt-item">
+										<div class="box-flex__txt">Fixed</div>
+										<div class="box-flex__txt">Flat Rate</div>
+									</div>
+								</div>
+								<div class="footer-form__box-flex">
+									<div class="box-flex__input-item">
+										<input name="price" type="radio" id="price_2" class="box-flex__radio-input" value="10.00">
+										<span class="box-flex__radio-custom"></span>
+										<label for="price_2" class="box-flex__entry-filed">$10.00</label>
+									</div>
+									<div class="box-flex__txt-item">
+										<div class="box-flex__txt">Table Rate</div>
+										<div class="box-flex__txt">Best Way</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="form-shiping__send-box send-box">
+								<div class="send-box__knob"><button class="button">next</button></div>
+								<div class="link"><a href="#">Back</a></div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</main>
+		<footer></footer>
+	</div>
+</body>
+
+</html>
