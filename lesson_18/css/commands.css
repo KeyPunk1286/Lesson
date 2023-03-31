@@ -1,0 +1,339 @@
+/*------------------------- block_header_nav ----------------------------------*/
+.header__logo{
+	color: #495057;
+	font-weight: 700;
+    font-size: 18px;
+    line-height: 1.39;
+}
+.header__lis-nav{
+	color: #495057;
+	font-weight: 500;
+    line-height: 2.08;
+
+}
+.header__search{
+	color: #495057;
+	font-weight: 500;
+    line-height: 2.08;	
+}
+.header__get{
+	color: #F8F9FA;
+	font-weight: 500;
+    line-height: 2.08;
+}
+/*------------------------- block_header ----------------------------------*/
+.header__content_name-autor{
+    color: #E5E5E5;
+	line-height: 1.67;
+}
+.header__content_title{
+	font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+    color: #F8F9FA;
+}
+/*------------------------ block_aside -----------------------------------*/
+.aside__title{
+	color: #212529;
+	font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+}
+.acide__link{
+	font-weight: 500;
+    font-size: 12px;
+    line-height: 2.08;
+    color: #495057;
+}
+.aside__search{
+	font-weight: 500;
+    line-height: 2.08;
+    color: rgba(73, 80, 87, 0.5);
+}
+/*------------------------ block_bside -----------------------------------*/
+.bside__date{
+    line-height: 20px;
+}
+.bside__title{
+	font-weight: 500;
+    font-size: 16px;
+    line-height: 1.56;
+color: #212529;
+}
+.bside__txt{
+	line-height: 1.67;
+}
+.bside__author-name{
+	line-height: 1.67;
+}
+.bside__like{
+	line-height: 1.67;
+}
+.bside__page{
+	font-weight: 500;
+    line-height: 2.08;
+    color: rgba(73, 80, 87, 0.5);
+}
+/*------------------------ footer -----------------------------------*/
+.footer__logo{
+	color: #F8F9FA;
+	font-weight: 700;
+    font-size: 18px;
+    line-height: 1.39;
+}
+.footer__list{
+	color: rgba(248, 249, 250, 0.5);
+	font-weight: 500;
+    font-size: 12px;
+    line-height: 2.08;
+}
+.footer__address{
+	color: rgba(248, 249, 250, 0.5);
+	font-weight: 500;
+    line-height: 1.67;
+}
+.footer__lab{
+	color: rgba(248, 249, 250, 0.5);
+	font-weight: 500;
+    line-height: 1.67;
+}
+
+
+
+
+
+/*---------------------- header -----------------------*/
+.header__content {
+}
+.header__container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	min-height: 90px;
+	align-items: center;
+	padding: 5px 0 5px;
+	gap: 10px;
+
+    border-bottom: 1px solid black;
+}
+.header__logo {
+	color: #495057;
+	font-weight: 700;
+    font-size: 18px;
+    line-height: 1.39;
+}
+.header__logo::after{
+	content: ".";
+	color: #DDBEA9;
+
+}
+/*---------------------- header__nav -----------------------*/
+.header__navigator {
+}
+.header__list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 25px;
+	row-gap: 5px;
+}
+.list-header {
+}
+.list-header__item {
+}
+.list-header__item_parent{
+	position: relative;
+	padding-right: 13px;
+}
+.list-header__item_parent:hover .list_header-sub-menu{
+    opacity: 1;
+	visibility: visible;
+	transition: all 0.3s;
+}
+.list-header__item_parent::after{
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 5px;
+	background: url("../img/vector/vector/arrow_nav.svg") no-repeat;
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+.list_header-sub-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding-top: 5px;
+
+	opacity: 0;
+	visibility: hidden;
+
+	transition: all 0.3s;
+
+}
+.sub-menu {
+
+}
+.sub-menu__list {
+	background: #212529;
+border-radius: 5px;
+	padding: 20px;
+	min-width: 140px;
+}
+.sub-menu__list :not(:last-child){
+    margin-bottom: 10px;
+}
+.sub-menu__item {
+}
+.sub-menu__link {
+	color: rgba(248, 249, 250, 0.6);
+	font-weight: 500;
+    line-height: 2.08;
+
+	transition: color 0.3s;
+}
+.sub-menu__link:hover{
+	color: #Fff;
+	transition: color 0.3s;
+}
+.list-header__link {
+	color: rgba(73, 80, 87, 0.5);
+	font-weight: 500;
+	line-height: 2.08;
+	display: inline-block;
+	position: relative;
+	transition: color 0.3s;
+}
+.list-header__link::before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background: transparent;
+	border-radius: 2px;
+	transition: background 0.3s;
+}
+.list-header__item:hover .list-header__link::before {
+
+	background: #DDBEA9;
+	transition: background 0.3s;
+}
+.list-header__item:hover .list-header__link{
+		color: rgb(37, 41, 44);
+		transition: color 0.3s;
+}
+
+
+/*---------------------- header__form -----------------------*/
+.header__form {
+}
+.form-header {
+}
+.form-header__box {
+	display: flex;
+	flex-wrap: wrap;
+    align-items: center;
+	column-gap: 25px;
+	row-gap: 5px;
+
+}
+.box-form {
+}
+.box-form__login {
+		position: relative;
+}
+.login-box {
+}
+.login-box__checkbox {
+	width: 0;
+	height: 0;
+	position: absolute;
+	z-index: -1;
+}
+.login-box__label {
+	font-weight: 500;
+	line-height: 2.08;
+	color: rgba(73, 80, 87, 0.5);
+	transition: color 0.3s;
+}
+.login-box__label:hover{
+	color: rgb(73, 80, 87);
+	transition: color 0.3s;
+}
+.login-box__sign-in{
+	position: absolute;
+	top: 135%;
+	left: -130%;
+	z-index: 1;
+
+	width: 250px;
+
+	background: #212529;
+    border: 1px solid rgba(73, 80, 87, 0.5);
+	border-radius: 10px;
+	padding: 10px;
+
+	transform: scale(0);
+	transition: transform 0.2s ease-in;
+}
+.login-box__checkbox:checked + .login-box__sign-in{
+	transform: scale(1);
+	transition: transform 0.2s ease-in;
+}
+.login-box__sign-in :not(:last-child){
+	margin-bottom: 8px;
+}
+
+.sin-in__item{
+	width: 100%;
+}
+
+.sign-in__entry-field{
+	width: 100%;
+	color: rgba(248, 249, 250, 0.6);
+	font-weight: 500;
+
+	border: 1px solid rgba(73, 80, 87, 0.5);
+	border-radius: 5px;
+
+	padding: 3px 5px;
+	background: rgba(73, 80, 87, 0.24);
+}
+.sign-in__button button{
+	color: rgba(248, 249, 250, 0.6);
+	font-weight: 500;
+	text-transform: uppercase;
+	
+	border: 1px solid rgba(73, 80, 87, 0.5);
+	border-radius: 5px;
+	padding: 3px 5px;
+	background: rgba(73, 80, 87, 0.24);
+
+	transition: color 0.3s;
+}
+.sign-in__button button:hover{
+	color: rgb(248, 249, 250);
+	transition: color 0.3s;
+}
+.box-form__button{
+
+}
+.box-form__button button{
+	color: #F8F9FA;
+	font-weight: 500;
+	line-height: 2.08;
+	background: #DDBEA9;
+    border-radius: 20px;
+	padding: 7px 16px 8px 15px;
+	transition: background 0.3s;
+}
+.box-form__button button:hover{
+	background: #e2b394;
+	transition: background 0.3s;
+}
+.header__icon-menu{
+	display: none;
+}
