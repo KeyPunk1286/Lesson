@@ -1,0 +1,253 @@
+@use "sass:math";
+
+@import "_reset.scss";
+@import "_common.scss";
+@import "_mixin.scss";
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+//================================ body =========================================
+body{
+	background: #FFFFFF;
+}
+[class*="__container"]{
+	//@include container($containermw:1270px, $containermg:0 auto, $containerpg:0 15px);
+	max-width: rem(1920);
+	padding: rem(0) rem(21);
+	@media (max-width:rem(810)){
+		padding: rem(0) rem(15);
+	}
+}
+//==================================== навігатор ===============================================
+.main-page {
+
+	// .main-page__container
+
+	&__container {
+	}
+
+	// .main-page__menu
+
+	&__menu {
+	}
+}
+.menu-main {
+	margin-bottom: rem(30);
+
+	// .menu-main__inner
+
+	&__inner {
+		border: 2px solid #C4C4C4;
+	}
+
+	// .menu-main__title
+
+	&__title {
+		font-family: "Oswald", sans-serif;
+		@include ftstyle($ftstylecr:#000000, $ftstylelh:2.83, $ftstylefw:400);
+		font-size: rem(24);
+		text-transform: uppercase;
+		text-align: center;
+		padding: 0 rem(93);
+		@media (max-width:rem(925)){
+			font-size: rem(20);
+		}
+		@media (max-width:rem(424.98)){
+			padding: 0 rem(20);
+		}
+	}
+
+	// .menu-main__navigator
+
+	&__navigator {
+		display: flex;
+		//column-gap: rem(35);
+		justify-content: space-between;
+		padding: 0 rem(10) rem(28) rem(10);
+		@media (max-width:rem(1200)){
+			padding: 0 rem(10) rem(15) rem(10);
+		}
+		@media (max-width:rem(750)){
+            flex-wrap: wrap;
+			column-gap: 40px;
+		}
+		@media (max-width: rem(620)){
+			justify-content: center;
+		}
+		@media (max-width: rem(470)){
+			justify-content: center;
+			padding: rem(20) rem(10) rem(28) rem(10);
+		}
+		
+	}
+
+	// .menu-main__items
+
+	&__items {
+		flex: 0 1 12.513312%;
+        text-align: center;
+		align-self: center;
+		padding: rem(45) 0;
+		transition: background 0.6s;
+		@media (max-width:rem(1200)){
+			padding: rem(30) 0;
+		}
+		@media (max-width:rem(925)){
+			padding: rem(15) 0;
+		}
+		@media (max-width: rem(620)){
+			flex: 0 1 25%;
+		}
+		@media (max-width: rem(470)){
+			flex: 0 1 90%;
+		}
+		
+		&:nth-child(1){
+			img{
+				max-width: 60.5744681%;
+				
+			}
+
+		}
+		&:nth-child(2){
+			img{
+				max-width: 71.7574468%;
+			}
+
+		}
+		&:nth-child(3){
+			img{
+				max-width: 37.7659574%;
+			}
+
+		}
+		&:nth-child(4){
+			img{
+				max-width: 43.1702128%;
+			}
+
+		}
+		&:nth-child(5){
+			img{
+				max-width: 57.4978723%;
+			}
+
+		}
+		&:nth-child(6){
+			img{
+				max-width: 53.5021277%;
+			}
+
+		}
+		&:nth-child(7){
+			img{
+				max-width: 71.9148936%;
+			}
+
+		}
+		
+
+	}
+	@media (any-hover: hover){
+		&__items:hover{
+            background: #F0F2F2;
+			transition: background 0.3s;
+		}
+		}
+
+	// .menu-main__link
+
+	&__link {
+
+	}
+	// &__link:nth-child(1) img{
+    //     
+	// 	
+	// }
+}
+//==================================== Великі фоткі ===============================================
+.main-page {
+
+	// .main-page__big-pic
+
+	&__big-pic {
+	}
+}
+.big-pic {
+
+	// .big-pic__inner
+
+	&__inner {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		// column-gap: rem(29);
+		// row-gap: rem(29);
+	}
+
+	// .big-pic__cards
+
+	&__cards {
+		position: relative;
+	}
+	&__cards:nth-child(1),
+	&__cards:nth-child(3){
+		.big-pic__img{
+			padding-bottom: 46.969697%;
+		}
+	}
+	&__cards:nth-child(2){
+		grid-row: span 2;
+        .big-pic__img{
+			padding-bottom: 97.0810811%;
+		}
+	}
+	&__cards:nth-child(1){
+		.big-pic__info{
+			// position: absolute;
+			// top: 0;
+			// left: 0;
+			// z-index: 2;
+		}
+	}
+
+	// 
+
+	&__img {
+		position: relative;
+		
+	}
+	&__img img{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	// .big-pic__info
+
+	&__info {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		
+	}
+
+	// .big-pic__title
+
+	&__title {
+	}
+
+	// .big-pic__text
+
+	&__text {
+	}
+
+	// .big-pic__link
+
+	&__link {
+	}
+}
+
